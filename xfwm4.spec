@@ -2,15 +2,12 @@
 
 Summary:	Window manager for Xfce
 Name:		xfwm4
-Version:	4.10.0
+Version:	4.10.1
 Release:	1
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://archive.xfce.org/src/xfce/xfwm4/4.10/%{name}-%{version}.tar.bz2
-# Source0-md5:	333e5e25a85411c304e9b4474bf00537
-Patch0:		099614e3f045e06db7ab509e174510ea74857adb.patch
-Patch1:		aa75f33e8dc2343df631a0a296e9ef54ea8a88ed.patch
-Patch2:		c4d89dd11e2c33f6f5797fb82910b97d483fb599.patch
+# Source0-md5:	10de50c79ed944cbb9c87741062c2a76
 URL:		http://www.xfce.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -38,9 +35,6 @@ xfwm4 is a EWMH standard compliant window manager.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
 
 %build
 %{__intltoolize}
