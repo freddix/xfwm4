@@ -1,13 +1,13 @@
-%define		xfce_version	4.10.0
+%define		xfce_version	4.11.0
 
 Summary:	Window manager for Xfce
 Name:		xfwm4
-Version:	4.10.1
+Version:	4.11.2
 Release:	1
 License:	GPL v2
 Group:		X11/Applications
-Source0:	http://archive.xfce.org/src/xfce/xfwm4/4.10/%{name}-%{version}.tar.bz2
-# Source0-md5:	10de50c79ed944cbb9c87741062c2a76
+Source0:	http://archive.xfce.org/src/xfce/xfwm4/4.11/%{name}-%{version}.tar.bz2
+# Source0-md5:	daa91416f46c4b53b381c972c86f0efc
 URL:		http://www.xfce.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -22,7 +22,7 @@ BuildRequires:	libxfce4ui-devel >= %{xfce_version}
 BuildRequires:	pkg-config
 BuildRequires:	startup-notification-devel
 BuildRequires:	xfce4-dev-tools >= %{xfce_version}
-BuildRequires:	xfconf-devel >= %{xfce_version}
+BuildRequires:	xfconf-devel >= 4.10.0
 BuildRequires:	xorg-libXcomposite-devel
 BuildRequires:	xorg-libXpm-devel
 Requires(post,postun):	gtk+-update-icon-cache
